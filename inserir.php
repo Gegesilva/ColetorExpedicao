@@ -45,7 +45,7 @@
 		while($row4 = sqlsrv_fetch_array($stmt4, SQLSRV_FETCH_ASSOC)){
 		$status = $row4['status'];
 		}
-		if($status == '13'){
+		if($status == '01' || $status =='06' || $status == '09' || $status =='11' || $status == '13' || $status =='15'){
 
 		}else{
 			echo"<h1 class='resultado'>O pedido <b>$pedido</b> não está em um status válido!</h1>";
